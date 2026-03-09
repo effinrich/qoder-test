@@ -1,9 +1,9 @@
 import type { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import type { TokenPayload, AuthUser } from '@oauth-service/shared-types';
 
-declare module 'fastify' {
-  interface FastifyRequest {
-    user?: AuthUser;
+declare module '@fastify/jwt' {
+  interface FastifyJWT {
+    user: AuthUser;
   }
 }
 
@@ -17,7 +17,7 @@ export async function authenticate(
       return reply.status(401).send({ error: 'Not authenticated' });
     }
 
-    const decoded = request.server.jwt.verify<TokenPayload>(token);
+    const decoded = request.server.jwt.verify<TokenPayload>(token) as TokenPayload;
     
     const [user] = await request.server.db<AuthUser[]>`
       SELECT 

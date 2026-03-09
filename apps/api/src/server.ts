@@ -1,3 +1,4 @@
+import { exit } from 'node:process';
 import { buildApp } from './app.js';
 import { config } from './config/index.js';
 
