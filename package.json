@@ -1,0 +1,20 @@
+{
+  "name": "oauth-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:api": "pnpm --filter @oauth-service/api run dev",
+    "dev:web": "pnpm --filter @oauth-service/web run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "db:migrate": "pnpm --filter @oauth-service/api run db:migrate",
+    "db:seed": "pnpm --filter @oauth-service/api run db:seed"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
