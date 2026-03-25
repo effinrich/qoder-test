@@ -21,7 +21,7 @@
     "@fastify/rate-limit": "^9.1.0",
     "@oauth-service/shared-types": "workspace:*",
     "dotenv": "^16.4.5",
-    "fastify": "^4.28.1",
+    "fastify": "^5.8.3",
     "fastify-plugin": "^4.5.1",
     "passport": "^0.7.0",
     "passport-github2": "^0.1.12",
