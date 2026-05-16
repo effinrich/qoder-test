@@ -1,0 +1,12 @@
+wing: qoder_test
+rooms:
+- name: apps
+  description: Files from apps/
+- name: configuration
+  description: Files from infra/
+- name: packages
+  description: Files from packages/
+- name: backend
+  description: Files from api/
+- name: general
+  description: Files that don't fit other rooms

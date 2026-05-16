@@ -1,0 +1,15 @@
+{
+  "people": [],
+  "projects": [
+    "Admin",
+    "Project",
+    "Shared",
+    "Architecture",
+    "Audit",
+    "Docker",
+    "Detailed",
+    "Dependency",
+    "Performance",
+    "Troubleshooting"
+  ]
+}
